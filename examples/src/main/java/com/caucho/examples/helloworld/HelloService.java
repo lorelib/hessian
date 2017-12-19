@@ -1,4 +1,4 @@
-package com.lorelib.hessian.examples.helloworld;
+package com.caucho.examples.helloworld;
 
 /**
  * @author listening

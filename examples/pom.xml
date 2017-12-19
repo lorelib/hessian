@@ -19,5 +19,10 @@
       <artifactId>core</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>4.3.13.RELEASE</version>
+    </dependency>
   </dependencies>
 </project>

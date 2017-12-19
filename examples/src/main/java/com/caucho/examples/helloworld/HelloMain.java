@@ -1,4 +1,4 @@
-package com.lorelib.hessian.examples.helloworld;
+package com.caucho.examples.helloworld;
 
 import com.caucho.hessian.client.HessianProxyFactory;
 

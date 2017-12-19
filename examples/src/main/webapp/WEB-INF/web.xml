@@ -9,11 +9,24 @@
     <servlet-class>com.caucho.hessian.server.HessianServlet</servlet-class>
     <init-param>
       <param-name>service-class</param-name>
-      <param-value>com.lorelib.hessian.examples.helloworld.HelloService</param-value>
+      <param-value>com.caucho.examples.helloworld.HelloService</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>HessianServlet</servlet-name>
     <url-pattern>/hessian</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>remoting</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:remoting-servlet.xml</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>remoting</servlet-name>
+    <url-pattern>/remoting/*</url-pattern>
   </servlet-mapping>
 </web-app>
